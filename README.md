@@ -2,13 +2,15 @@
 
 Recipe to install Reticulum Network Stack oon a Raspberry Pi Zero 2 W
 
-There isn an excelent video on how to [Build a Small Reticulum Meshchat Node with Raspberry Pi Zero 2W and RAK 4631 including WiFi Hotspot.](https://youtu.be/T1itQcdf5cc?si=qkncRQCppQkjlbGT)
+There is an excelent video on how to [Build a Small Reticulum Meshchat Node with Raspberry Pi Zero 2W and RAK 4631 including WiFi Hotspot.](https://youtu.be/T1itQcdf5cc?si=qkncRQCppQkjlbGT)
 
 However, the Raspberry Pi Zero 2 W setup was very involved itself. Takes ages to flash and boot. Also feels the command prompt feels sluggish. Then I stumbled upon the amazing [Gokrazy Project](https://gokrazy.org/) which sets up a custom Linux image which is the minimun you can have, the kernel, the init process, a few more essential processes and your Go application.
 
 All I had to do was to find a Go-implemented Reticulum Transport Stack equivalent to the Python reference implementation.
 
 Fortunately, I found a couple of GitHub repositores. I chose [this GitHub repo](https://github.com/svanichkin/go-reticulum) and by trial and error I setup Just recipes to automate the whole process.
+
+This installation only sets up a basic Reticulum Transport node with the `rnsd` daemon and a bunch of related utilities. No `LXMF` daemon yet.
 
 This repo is only a [Just](https://just.systems/man/en/) recipe to install the [Reticulum Network Stack](https://reticulum.network/) on a [Raspberry Pi Zero 2 W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/).
 
