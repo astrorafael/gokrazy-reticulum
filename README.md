@@ -46,7 +46,9 @@ just gokrazy
 ```
 2. Create a GoKrazy instance image (your node)
 
-Create an instance named `myreticulum` which will connect to your WiFi router with SSID `XYD` and password `foo`. Before executing this command, make sure that your id_rsa.pub is avaliable on yoir `.ssh/` directory so that yo can log-in later on.
+Before executing this command, make sure that your `id_rsa.pub` is available on your `.ssh/` directory so that yo can log-in later on with ssh.
+
+Create an instance named `myreticulum` which will connect to your WiFi router with SSID `XYD` and password `foo` by executing: 
 
 ```bash
 just base myreticulum XYD foo
